@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import { Listbox, Transition } from "@headlessui/react";
 
 import { CustomFilterProps } from "@/types";
-import { updateSearchParams } from "@/utils";
 
 export default function CustomFilter({
   title,
