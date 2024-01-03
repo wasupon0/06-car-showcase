@@ -68,3 +68,8 @@ export interface SearchManuFacturerProps {
   selected: string;
   setSelected: (manufacturer: string) => void;
 }
+
+export interface SearchBarProps {
+  setManufacturer: (manufacturer: string) => void;
+  setModel: (model: string) => void;
+}
