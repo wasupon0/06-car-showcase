@@ -1,11 +1,11 @@
 "use client";
 
-import { fetchCars } from "@/utils";
-import { HomeProps } from "@/types";
+import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from "@/components";
 import { fuels, yearsOfProduction } from "@/constants";
-import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "@/components";
-import { useEffect, useState } from "react";
+import { HomeProps } from "@/types";
+import { fetchCars } from "@/utils";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [allCars, setAllCars] = useState([]);
@@ -52,8 +52,8 @@ export default function Home() {
 
       <div className="mt-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
-          <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
-          <p>Explore out cars you might like</p>
+          <h1 className="text-4xl font-extrabold">Shopping Catalogue</h1>
+          <p>Discover must-have items just for you</p>
         </div>
 
         <div className="home__filters">

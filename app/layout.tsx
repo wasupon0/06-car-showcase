@@ -1,10 +1,10 @@
+import { Footer, Navbar } from "@/components";
 import type { Metadata } from "next";
 import "./globals.css";
-import { Footer, Navbar } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Car Hub",
-  description: "Car Hub description",
+  title: "FashionFlex",
+  description: "FashionFlex description",
 };
 
 export default function RootLayout({
@@ -14,6 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.svg" sizes="any" />
       <body className="relative">
         <Navbar />
         {children}

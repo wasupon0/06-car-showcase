@@ -9,23 +9,23 @@ const Hero = () => {
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
-          Find2, book, rent a car—quick and super easy!
+          Style, Quality, Convenience—All in One Place
         </h1>
 
         <p className="hero__subtitle">
-          Streamline your car rental experience with our effortless booking
-          process.
+          Explore a curated selection of fashion, electronics, furniture, shoes,
+          and more.
         </p>
 
         <CustomButton
-          title="Explore Cars"
-          containerStyles="bg-primary-blue text-white rounded-full mt-10"
+          title="Go Shopping"
+          containerStyles="bg-primary-purple text-white rounded-full mt-10"
           handleClick={handleScroll}
         />
       </div>
       <div className="hero__image-container">
         <div className="hero__image">
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          <Image src="/hero.webp" alt="hero" fill className="object-contain" />
         </div>
 
         <div className="hero__image-overlay" />

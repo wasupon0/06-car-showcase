@@ -1,7 +1,7 @@
 "use client";
+import { Combobox, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import { Combobox, Transition } from "@headlessui/react";
 
 import { manufacturers } from "@/constants";
 import { SearchManuFacturerProps } from "@/types";
@@ -70,7 +70,9 @@ const SearchManufacturer = ({
                     key={item}
                     className={({ active }) =>
                       `relative search-manufacturer__option ${
-                        active ? "bg-primary-blue text-white" : "text-gray-900"
+                        active
+                          ? "bg-primary-purple text-white"
+                          : "text-gray-900"
                       }`
                     }
                     value={item}
@@ -85,7 +87,7 @@ const SearchManufacturer = ({
                           {item}
                         </span>
 
-                        {/* Show an active blue background color if the option is selected */}
+                        {/* Show an active purple background color if the option is selected */}
                         {selected ? (
                           <span
                             className={`absolute inset-y-0 left-0 flex items-center pl-3 ${

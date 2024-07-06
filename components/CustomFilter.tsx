@@ -1,9 +1,9 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Listbox, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Listbox, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
 
 import { CustomFilterProps } from "@/types";
 
@@ -49,7 +49,7 @@ export default function CustomFilter({
                   key={option.title}
                   className={({ active }) =>
                     `relative cursor-default select-none py-2 px-4 ${
-                      active ? "bg-primary-blue text-white" : "text-gray-900"
+                      active ? "bg-primary-purple text-white" : "text-gray-900"
                     }`
                   }
                   value={option}

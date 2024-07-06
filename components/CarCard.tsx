@@ -1,11 +1,11 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 
 import { CarProps } from "@/types";
-import CustomButton from "./CustomButton";
 import { calculateCarRent, generateCarImageUrl } from "@/utils";
 import { CarDetails } from ".";
+import CustomButton from "./CustomButton";
 
 interface CarCardProps {
   car: CarProps;
@@ -67,7 +67,7 @@ const CarCard = ({ car }: CarCardProps) => {
         <div className="car-card__btn-container">
           <CustomButton
             title="view more"
-            containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
+            containerStyles="w-full py-[16px] rounded-full bg-primary-purple"
             textStyles="text-white text-[14px] leading-[17px] font-bold"
             rightIcon="/right-arrow.svg"
             handleClick={() => setIsOpen(true)}

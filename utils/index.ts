@@ -1,4 +1,6 @@
 import { CarProps, FilterProps } from "@/types";
+import categoryData from "../public/categories.json";
+import productData from "../public/products.json";
 
 export async function fetchCars(filters: FilterProps) {
   const { manufacturer, year, model, limit, fuel } = filters;
@@ -13,6 +15,8 @@ export async function fetchCars(filters: FilterProps) {
     `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`,
     { headers: headers }
   );
+
+  //https://fakeapi.platzi.com/
 
   const result = await response.json();
 
